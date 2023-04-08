@@ -10,3 +10,7 @@ int User::getId(){
 std::string User::getName(){
     return name;
 }
+
+double User::buy(Product *product,int quantity){
+    return product->buy(quantity);
+}

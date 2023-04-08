@@ -23,7 +23,7 @@ int main(){
     Product *prod ;
     try {
         prod = inventory.selectProduct("shirts2");
-        std::cout<<"Pay Rs."<<prod->buy(8)<<std::endl;
+        std::cout<<"Pay Rs."<<u1.buy(prod,8)<<std::endl;
     } catch(ProductNotFoundException *e){
         std::cout<<e->what()<<std::endl;
     }
@@ -34,7 +34,7 @@ int main(){
     for(Product *prod : searchProductResult){
         std::cout<<prod->toString()<<std::endl;
         try{
-            std::cout<<"Pay Rs."<<prod->buy(5)<<std::endl;
+            std::cout<<"Pay Rs."<<u1.buy(prod,5)<<std::endl;
         } catch(NotSufficientQuantityException *e){
             std::cout<<e->what()<<std::endl;
         }
