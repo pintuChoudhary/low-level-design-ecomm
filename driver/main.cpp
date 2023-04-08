@@ -30,7 +30,7 @@ int main(){
 
     std::vector<Product*> searchProductResult = inventory.searchByProductTitle("formal shirt");
     
-    std::cout<<"==================== Searched result for "<<"'formal shirt'"<<" ================"<<std::endl;
+    std::cout<<"=================== Searched result for "<<"'formal shirt'"<<" ================"<<std::endl;
     for(Product *prod : searchProductResult){
         std::cout<<prod->toString()<<std::endl;
         try{
