@@ -24,8 +24,8 @@ int main(){
     try {
         prod = inventory.selectProduct("shirts2");
         std::cout<<"Pay Rs."<<u1.buy(prod,8)<<std::endl;
-    } catch(ProductNotFoundException *e){
-        std::cout<<e->what()<<std::endl;
+    } catch(const ProductNotFoundException &e){
+        std::cout<<e.what()<<std::endl;
     }
 
     std::vector<Product*> searchProductResult = inventory.searchByProductTitle("formal shirt");
@@ -35,8 +35,8 @@ int main(){
         std::cout<<prod->toString()<<std::endl;
         try{
             std::cout<<"Pay Rs."<<u1.buy(prod,5)<<std::endl;
-        } catch(NotSufficientQuantityException *e){
-            std::cout<<e->what()<<std::endl;
+        } catch(const NotSufficientQuantityException &e){
+            std::cout<<e.what()<<std::endl;
         }
     }
 
