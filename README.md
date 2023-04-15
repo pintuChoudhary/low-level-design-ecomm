@@ -1,7 +1,5 @@
 # low-level-design-ecomm
 
-Low Level Design for simple ecommerce application.
-
 Design a simple e-commerce website for a small clothing store. 
 
 The website should allow users to browse and purchase clothing items online. 
